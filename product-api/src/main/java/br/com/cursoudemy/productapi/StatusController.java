@@ -13,7 +13,7 @@ import java.util.HashMap;
 public class StatusController {
 
     @GetMapping("status")
-    public ResponseEntity<HashMap<String, Object>> getApiStatus(){
+    public ResponseEntity<HashMap<String, Object>> getApiStatus() {
         var response = new HashMap<String, Object>();
 
         response.put("service", "Product-API");
