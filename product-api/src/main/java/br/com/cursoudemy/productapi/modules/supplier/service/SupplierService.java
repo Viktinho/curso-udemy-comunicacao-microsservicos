@@ -61,6 +61,7 @@ public class SupplierService {
 
     public SupplierResponse update(SupplierRequest request, Integer id){
         validateSupplierNameInformed(request);
+        validateInformedId(id);
         var supplier = Supplier.of(request);
         supplier.setId(id);
         supplierRepository.save(supplier);
